@@ -74,5 +74,18 @@ end
 
 def runner
   # code runner here
+  welcome()
+  card_value = initial_round()
+
+  until card_value > 21 do
+
+    new_value = hit?(card_value)
+    card_value = new_value
+
+    if card_value < 22
+      display_card_total(card_value)
+    else
+      end_game(card_value)
+    end
 end
     
