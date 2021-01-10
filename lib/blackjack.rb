@@ -54,7 +54,10 @@ def hit?(num)
   else
     invalid_command()
     prompt_user()
-    get_user_input()
+    decision = get_user_input()
+    if decision == 'h'
+      card_total += deal_card
+    end
   end
 
   card_total
