@@ -88,5 +88,8 @@ def runner
       end_game(card_value)
     end
   end
+  
+end_game(card_value)
+
 end
     
