@@ -82,11 +82,7 @@ def runner
     new_value = hit?(card_value)
     card_value = new_value
 
-    if card_value < 22
-      display_card_total(card_value)
-    else
-      end_game(card_value)
-    end
+    display_card_total(card_value)
   end
   
 end_game(card_value)
